@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Men's T-Shirts</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <!-- Header elements like logo, navigation, etc. -->
+    </header>
+
+    <main>
+        <h1>Custom Men's T-Shirts</h1>
+
+        <div class="product">
+            <img class="product-image" src="./Images/T-shirt-3.png" alt="Product 2">
+            <h2 class="product-name">Product 2</h2>
+            <p class="product-price">₹449</p>
+            <button  class="quick-view" onclick="togglePopup()">Quick View</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <h2>Product 2</h2>
+                <img src="./images/T-shirt-3.png" alt="tshirt" />
+                <p>₹499</p>
+            </div>
+        </div>
+
+       
+        
+ 
+            <!-- Add more product divs as necessary -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer elements like copyright info, secondary navigation, etc. -->
+    </footer>
+ 
+
+    <script src="../index.js">
+
+        function togglePopup(){
+            console.log("working");
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+        
+    </script>
+</body>
+</html>
